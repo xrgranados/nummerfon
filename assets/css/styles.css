@@ -1,0 +1,84 @@
+@import url(bootstrap.min.css);
+@import url(fonts.css);
+@import url(font-awesome.min.css);
+// @import url(utilities.css);
+
+// html,
+// body {
+//     height: 100%;
+//     min-height: 200px;
+//     min-width: 40em;
+// }
+
+body {
+    background-color: #f2f2f2 !important;
+    font-family: 'bentonsansbook', sans-serif;
+}
+
+.main-header {
+    background-color: #202020;
+    padding: 1em;
+    box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+.main-header a {
+    font-weight: bold;
+    color: #fff;
+}
+
+.main-header .icon {
+    border-radius: 50%;
+    border: 2px solid #337ab7;
+    padding: 5px;
+}
+
+.wrapper {
+    margin-top: 95px;
+    height: 75vh;
+}
+
+#list {
+    width: 100%;
+    height: 300px;
+}
+
+label {
+    color: #202020;
+}
+
+input[type=text],
+textarea {
+    border-radius: 4px;
+    outline: none;
+    padding: 3px 5px;
+}
+
+textarea {
+    resize: none;
+}
+
+textarea:focus {
+    box-shadow: 0 0 5px 1px #337ab7;
+}
+
+.table {
+    background-color: #fff;
+}
+
+.btn {
+    outline: none !important;
+}
+
+.footer {
+    background-color: #11161b;
+    border-top: 1px solid #3c3c3c;
+    color: #fff;
+    margin-top: 30px;
+    padding: 1.5em;
+    text-align: center;
+}
+
+.footer ul {
+    font-size: 10px;
+    list-style: none;
+}

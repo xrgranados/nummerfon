@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'bentonsansbook';
+    src: url('../fonts/bentonsansbook/bentonsansbook.eot');
+    src: url('../fonts/bentonsansbook/bentonsansbook.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bentonsansbook/bentonsansbook.woff') format('woff'),
+         url('../fonts/bentonsansbook/bentonsansbook.ttf') format('truetype'),
+         url('../fonts/bentonsansbook/bentonsansbook.svg#bentonsansbook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
