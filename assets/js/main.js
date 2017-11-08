@@ -1,10 +1,14 @@
 $('#processList').submit(function(e) {
     e.preventDefault();
     list = $('#list').val();
+    $('.form-group').removeClass('has-error');
+    $('.control-label').text('');
     if (list != '') {
         processList(list);
     } else {
-        $('#list').val('Debe de ingresar un listado de numeros').focus();
+        $('.form-group').addClass('has-error');
+        $('.control-label').text('Debe de ingresar un listado de números');
+        $('#list').focus();
     }
 });
 

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-GT">
 <head>
     <meta charset="UTF-8">
-    <title>NummerFon</title>
+    <title>Nummer</title>
     <link rel="apple-touch-icon" sizes="57x57" href="assets/img/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/img/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-icon-72x72.png">
@@ -20,15 +20,25 @@
     <meta name="msapplication-TileColor" content="#9609e2">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#9609e2">
-    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.min.css">
 
 </head>
 <body>
     <header class="main-header navbar-fixed-top">
-        <a href="#" class="text-center btn btn-link btn-block">
-            <i class="fa fa-phone icon"></i>
-            Operadores telefónicos
-        </a>
+        <div class="container">
+            <a href="#" class="logo col-sm-3">
+                <img src="assets/img/nummerfon.png">
+                Nummer
+            </a>
+            <ul class="col-sm-6 nav navbar-nav pull-right">
+                <li>
+                    <a href="#">Números telefónicos</a>
+                </li>
+                <li>
+                    <a href="/about">¿Nummer?</a>
+                </li>
+            </ul>
+        </div>
     </header>
     <div class="container">
         <div class="wrapper">
@@ -36,6 +46,7 @@
                 <form id="processList">
                     <div class="form-group">
                         <label for="list">Ingresar números</label>
+                        <div class="control-label"></div>
                         <textarea name="list" id="list" placeholder="Ingresar lista de números telefónicos"></textarea>
                     </div>
                     <button class="btn btn-primary">Procesar lista</button>

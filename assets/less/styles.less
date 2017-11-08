@@ -1,14 +1,9 @@
-@import url(bootstrap.min.css);
-@import url(fonts.css);
-@import url(font-awesome.min.css);
-// @import url(utilities.css);
-
-// html,
-// body {
-//     height: 100%;
-//     min-height: 200px;
-//     min-width: 40em;
-// }
+/**
+ * Style for Nummer page
+ */
+@import url('bootstrap.min.css');
+@import url('fonts.css');
+@import url('font-awesome.min.css');
 
 body {
     background-color: #f2f2f2 !important;
@@ -17,19 +12,31 @@ body {
 
 .main-header {
     background-color: #202020;
-    padding: 1em;
     box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.5);
+
+    a {
+        font-weight: bold;
+        color: #fff;
+    }
+
+    .logo img {
+        max-width: 50px;
+    }
 }
 
-.main-header a {
-    font-weight: bold;
-    color: #fff;
-}
+.navbar-nav {
+    & > li {
+        & > a {
+            border-bottom: 2px solid #202020;
 
-.main-header .icon {
-    border-radius: 50%;
-    border: 2px solid #337ab7;
-    padding: 5px;
+            &:hover,
+            &:focus,
+            &:active {
+                background-color: #101010;
+                border-bottom: 2px solid #fff;
+            }
+        }
+    }
 }
 
 .wrapper {
@@ -55,11 +62,12 @@ textarea {
 
 textarea {
     resize: none;
+
+    &:focus {
+        box-shadow: 0 0 5px 1px #337ab7;
+    }
 }
 
-textarea:focus {
-    box-shadow: 0 0 5px 1px #337ab7;
-}
 
 .table {
     background-color: #fff;
@@ -76,9 +84,9 @@ textarea:focus {
     margin-top: 30px;
     padding: 1.5em;
     text-align: center;
-}
 
-.footer ul {
-    font-size: 10px;
-    list-style: none;
+    ul {
+        font-size: 10px;
+        list-style: none;
+    }
 }
