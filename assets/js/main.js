@@ -39,7 +39,7 @@ function operator(numo) {
         ((58190000 <= num) && (num <= 58199999)) ||
         ((58800000 <= num) && (num <= 59099999)) ||
         ((59180000 <= num) && (num <= 59199999)) ||
-        ((59900000 <= num) && (num <= 59999999)) 
+        ((59900000 <= num) && (num <= 59999999))
     ) {
         return 'Tigo';
     } else if ( // Telefónica
@@ -58,7 +58,7 @@ function operator(numo) {
         ((56000000 <= num) && (num <= 56099999)) ||
         ((56400000 <= num) && (num <= 56899999)) ||
         ((57900000 <= num) && (num <= 57999999)) ||
-        ((59150000 <= num) && (num <= 59179999)) 
+        ((59150000 <= num) && (num <= 59179999))
     ) {
         return 'Movistar'
     } else if ( // Claro
@@ -96,7 +96,7 @@ function processList(dataList) {
             continue;
         }
         report += '<tr>';
-        report += '<td>'+ dataList[i] + '</td>';
+        report += '<td><a href="tel:'+ dataList[i] + '">'+ dataList[i] + '</td>';
         report += '<td>'+ operator(dataList[i]) +'</td>';
         report += '</tr>';
     }
